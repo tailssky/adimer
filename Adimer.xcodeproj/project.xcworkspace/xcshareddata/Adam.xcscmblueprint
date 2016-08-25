@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "83A1D6600B59CCA7CBE156EF12F942300151C25E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "83A1D6600B59CCA7CBE156EF12F942300151C25E" : 0,
+    "1DEE674240153F7B26A13FFB497EDEF17A039EEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "40D6B520-E045-4797-9FCE-B18AD10332B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "83A1D6600B59CCA7CBE156EF12F942300151C25E" : "Adam\/",
+    "1DEE674240153F7B26A13FFB497EDEF17A039EEF" : "Adam\/Adam\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Adam",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Adam.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tailssky\/Adam.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DEE674240153F7B26A13FFB497EDEF17A039EEF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tailssky\/Adam.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "83A1D6600B59CCA7CBE156EF12F942300151C25E"
+    }
+  ]
+}
