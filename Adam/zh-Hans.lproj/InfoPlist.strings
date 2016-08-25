@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Adimer
+
+  Created by 周岩峰 on 8/25/16.
+  Copyright © 2016 SwiftTai. All rights reserved.
+*/
+
+CFBundleDisplayName = "少数派点评";

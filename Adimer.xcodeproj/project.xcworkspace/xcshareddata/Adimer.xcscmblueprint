@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "61ADB8141F2B32F4B1097AD868743FE4F14EA5A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "61ADB8141F2B32F4B1097AD868743FE4F14EA5A7" : 0,
+    "1DEE674240153F7B26A13FFB497EDEF17A039EEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "618A5D7A-3FF4-48CE-9727-A89D930B6AED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "61ADB8141F2B32F4B1097AD868743FE4F14EA5A7" : "adimer\/",
+    "1DEE674240153F7B26A13FFB497EDEF17A039EEF" : "adimer\/Adam\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Adimer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Adimer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tailssky\/Adam.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DEE674240153F7B26A13FFB497EDEF17A039EEF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tailssky\/adimer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61ADB8141F2B32F4B1097AD868743FE4F14EA5A7"
+    }
+  ]
+}

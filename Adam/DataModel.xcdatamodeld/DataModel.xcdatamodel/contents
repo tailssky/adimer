@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="PublishContent" representedClassName=".PublishContent" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isAD" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="publishedPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="publishText" attributeType="String" syncable="YES"/>
+        <attribute name="shopTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PublishContent" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>
