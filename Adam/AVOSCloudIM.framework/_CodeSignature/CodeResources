@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		IVxws5viiIho+iqf2N3ZCioQfSs=
+		</data>
+		<key>Headers/.DS_Store</key>
+		<data>
+		L4hiAcu8MAso1lWzJ48mrKZ03BA=
+		</data>
 		<key>Headers/AVIMAudioMessage.h</key>
 		<data>
 		Nn2DITlADQKh7qPD10WrfOWRh/I=
@@ -84,13 +92,17 @@
 		<data>
 		jAxDKK8hh9vb631F/590Kba3xzE=
 		</data>
+		<key>Modules/.DS_Store</key>
+		<data>
+		TTnnG6sZZvtqlqweTdi3urujATI=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Z+NGYmnnZgNOkII1rg6WVLFh9tA=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		3qDFVRfDLigl3Z3RRN45g1mncGU=
+		otqbRIAVHKLsjRiHqsh/XJAFofk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -319,11 +331,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3qDFVRfDLigl3Z3RRN45g1mncGU=
+			otqbRIAVHKLsjRiHqsh/XJAFofk=
 			</data>
 			<key>hash2</key>
 			<data>
-			YoygHA67dI1jnaqB+Xu1LdNvdM/TycwLeDz5YkmX8gE=
+			YJWUkj+pVoqlYlgUyi7FUrD/ONtilYHweGzGIVTIIXM=
 			</data>
 		</dict>
 	</dict>

@@ -35,9 +35,7 @@
 		F17F9B861CF48795004DDDA5 /* PublishContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17F9B851CF48795004DDDA5 /* PublishContentCell.xib */; };
 		F17F9B881CF48BA6004DDDA5 /* PublishContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F9B871CF48BA6004DDDA5 /* PublishContentCell.swift */; };
 		F17F9B8A1CF493EC004DDDA5 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17F9B891CF493EC004DDDA5 /* NothingFoundCell.xib */; };
-		F182F70F1D2A86B80068D47E /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F182F70E1D2A86B80068D47E /* AVOSCloud.framework */; };
-		F182F7111D2A86CA0068D47E /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F182F7101D2A86CA0068D47E /* AVOSCloudIM.framework */; };
-		F182F7131D2A87250068D47E /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F182F70E1D2A86B80068D47E /* AVOSCloud.framework */; };
+		F182F70F1D2A86B80068D47E /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F182F70E1D2A86B80068D47E /* AVOSCloud.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F182F7141D2A87250068D47E /* AVOSCloud.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F182F70E1D2A86B80068D47E /* AVOSCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F182F7161D2A872B0068D47E /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F182F7101D2A86CA0068D47E /* AVOSCloudIM.framework */; };
 		F182F7171D2A872B0068D47E /* AVOSCloudIM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F182F7101D2A86CA0068D47E /* AVOSCloudIM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -186,8 +184,6 @@
 				F19395511D0EF6C10004EA98 /* MapKit.framework in Frameworks */,
 				F182F70F1D2A86B80068D47E /* AVOSCloud.framework in Frameworks */,
 				F182F7161D2A872B0068D47E /* AVOSCloudIM.framework in Frameworks */,
-				F182F7111D2A86CA0068D47E /* AVOSCloudIM.framework in Frameworks */,
-				F182F7131D2A87250068D47E /* AVOSCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +431,7 @@
 				F17F9B691CF47A98004DDDA5 /* Frameworks */,
 				F17F9B6A1CF47A98004DDDA5 /* Resources */,
 				F182F7151D2A87260068D47E /* Embed Frameworks */,
+				F16D72D51D6F19D000ABD3F8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -457,7 +454,7 @@
 				TargetAttributes = {
 					F17F9B6B1CF47A98004DDDA5 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7A9T5EXXY7;
+						DevelopmentTeam = N43FPHX3R8;
 					};
 				};
 			};
@@ -501,6 +498,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F16D72D51D6F19D000ABD3F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F17F9B681CF47A98004DDDA5 /* Sources */ = {
@@ -711,7 +724,7 @@
 				);
 				INFOPLIST_FILE = Adam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftTai.Adimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftTails.Adimer;
 				PRODUCT_NAME = Adimer;
 				SWIFT_OBJC_BRIDGING_HEADER = "Adam/Adam-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -730,7 +743,7 @@
 				);
 				INFOPLIST_FILE = Adam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftTai.Adimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftTails.Adimer;
 				PRODUCT_NAME = Adimer;
 				SWIFT_OBJC_BRIDGING_HEADER = "Adam/Adam-Bridging-Header.h";
 			};
