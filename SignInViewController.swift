@@ -41,7 +41,7 @@ class SignInViewController: UIViewController {
                     let alert = creatNormalAlert(alterMessage)
                     self.presentViewController(alert, animated: true, completion: nil)
                 default:
-                    let alterMessage = NSLocalizedString("Couldn't sign in,please check your network", comment: "alert")
+                    let alterMessage = NSLocalizedString("Couldn't sign in,please check your network.", comment: "alert") + "\(error.code)"
                     let alert = creatNormalAlert(alterMessage)
                     self.presentViewController(alert, animated: true, completion: nil)
                     print("\(error)")

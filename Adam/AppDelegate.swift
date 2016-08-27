@@ -103,7 +103,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
-        
+        if !userIsLogOut! {
                 let  tabbarcontroller = window?.rootViewController as! tabBarViewController
                 if let viewControllers = tabbarcontroller.viewControllers {
                     let navigationViewController = viewControllers[0] as! UINavigationController
@@ -112,6 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     getPublishInMultipleThreads()
                     
                 }
+        }
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 

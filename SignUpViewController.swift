@@ -123,7 +123,7 @@ class SignUpViewController: UIViewController {
                 let alert = creatNormalAlert(NSLocalizedString("The email address was invalid", comment: "sign up"))
                 self.presentViewController(alert, animated: true, completion: nil)})
         } else{
-            let alterMessage = NSLocalizedString("Couldn't sign in,please check your network", comment: "alert")
+            let alterMessage = NSLocalizedString("Couldn't sign in,please check your network", comment: "alert") + "\(error.code)"
             let alert = creatNormalAlert(alterMessage)
             self.presentViewController(alert, animated: true, completion: nil)
             
