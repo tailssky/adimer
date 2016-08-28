@@ -48,6 +48,31 @@ class MapViewController: UIViewController {
 //    var nextShowPins = [PublishPin]()
     var showingPins = [PublishPin]()
     
+    var needfresh: Bool! {
+        didSet {
+            popViewNames = [String]()
+            for club in joinedClub {
+                let clubName = club.name
+                popViewNames.append(clubName)
+            }
+            
+            //    popViewNames.append(allClub)
+            
+            popViewNames1 = [aLLnear,mostDelicious,mostClean,mostBestPrice,mostBestService]
+            
+            popViewNames.append(allClub)
+            
+            if ninaSelectionView != nil {
+                ninaSelectionView = nil
+            }
+            if ninaSelectionView1 != nil {
+                ninaSelectionView1 = nil
+            }
+            
+            setupNinaView()
+        }
+    }
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var locationBtn: UIButton!
     
@@ -71,7 +96,7 @@ class MapViewController: UIViewController {
         setupNinaView()
         
         
-        
+        needfresh = false
         
         
 //        for club in joinedClub {

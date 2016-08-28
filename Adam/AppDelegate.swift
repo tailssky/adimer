@@ -232,6 +232,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let mapViewController = navigationViewController.viewControllers[0] as! MapViewController
                 mapViewController.currentUser = userInfo
                 mapViewController.joinedClub = userInfo!.userData.clubsJoined + userInfo!.userData.clubsCreated
+                if mapViewController.needfresh != nil {
+                    mapViewController.needfresh = !mapViewController.needfresh}
                 
                 navigationViewController = viewControllers[2] as! UINavigationController
                 let userInfoViewController = navigationViewController.viewControllers[0] as! UserInfoTableViewController
