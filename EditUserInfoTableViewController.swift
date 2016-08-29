@@ -32,6 +32,7 @@ class EditUserInfoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         userNewPortrait.image = newUser.userPortraitImage
         
         phoneNumUILable.sizeToFit()
@@ -76,6 +77,8 @@ class EditUserInfoTableViewController: UITableViewController {
         saveToChangeUserInfo()
         let hudView = HudView.hudInView(navigationController!.view, animated: true)
         hudView.text = NSLocalizedString("Saved!", comment: "Hud text,published")
+        
+        needRefresh = true
         
         afterDelay(1, closure: {self.delegate?.editUserInfoTableViewControllerDidSaved(self, userData: self.newUser)})
         
@@ -289,7 +292,7 @@ extension EditUserInfoTableViewController: UIImagePickerControllerDelegate {
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        userNewPortrait.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        userNewPortrait.image = info[UIImagePickerControllerEditedImage] as? UIImage
         userNewPortrait.contentMode = UIViewContentMode.ScaleAspectFill
         userNewPortrait.clipsToBounds = true
         

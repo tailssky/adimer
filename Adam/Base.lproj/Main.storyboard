@@ -2068,7 +2068,7 @@
                             </tableViewSection>
                             <tableViewSection id="PlQ-1z-Wju">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dYN-Q8-4KB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="dYN-Q8-4KB">
                                         <rect key="frame" x="0.0" y="225" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYN-Q8-4KB" id="qej-0G-OI2">
@@ -2096,38 +2096,32 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jau-nw-rxc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="jau-nw-rxc">
                                         <rect key="frame" x="0.0" y="269" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jau-nw-rxc" id="Vwj-9j-gbp">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LE-To-eZQ">
-                                                    <rect key="frame" x="23" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZP-jJ-wYv">
+                                                    <rect key="frame" x="37" y="8" width="41" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsc-8T-S7R">
-                                                    <rect key="frame" x="339" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnP-9M-Uco">
+                                                    <rect key="frame" x="550" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="7LE-To-eZQ" firstAttribute="leading" secondItem="Vwj-9j-gbp" secondAttribute="leading" constant="10" id="5tx-sb-ta5"/>
-                                                <constraint firstItem="Bsc-8T-S7R" firstAttribute="centerY" secondItem="Vwj-9j-gbp" secondAttribute="centerY" id="gQI-Dd-1In"/>
-                                                <constraint firstItem="7LE-To-eZQ" firstAttribute="centerY" secondItem="Vwj-9j-gbp" secondAttribute="centerY" id="m7k-KM-jZf"/>
-                                                <constraint firstAttribute="trailing" secondItem="Bsc-8T-S7R" secondAttribute="trailing" constant="10" id="mKJ-mb-rVo"/>
+                                                <constraint firstItem="AnP-9M-Uco" firstAttribute="centerY" secondItem="Vwj-9j-gbp" secondAttribute="centerY" id="IGp-jN-rO6"/>
+                                                <constraint firstAttribute="trailing" secondItem="AnP-9M-Uco" secondAttribute="trailing" constant="10" id="NLf-oy-etI"/>
+                                                <constraint firstItem="YZP-jJ-wYv" firstAttribute="leading" secondItem="Vwj-9j-gbp" secondAttribute="leading" constant="10" id="Uaf-S9-Wjc"/>
+                                                <constraint firstItem="YZP-jJ-wYv" firstAttribute="centerY" secondItem="Vwj-9j-gbp" secondAttribute="centerY" id="goR-Hb-PVm"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="7LE-To-eZQ"/>
-                                                    <exclude reference="Bsc-8T-S7R"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -2197,8 +2191,8 @@
                         <outlet property="addFriendBtn" destination="Rdl-ZW-OK7" id="RyY-Ak-wEm"/>
                         <outlet property="inviteBtn" destination="mUq-eM-Abl" id="0rD-T1-4mx"/>
                         <outlet property="removeUserBtn" destination="DPs-G0-yGs" id="C0W-wx-yxJ"/>
-                        <outlet property="userEmail" destination="Bsc-8T-S7R" id="eSK-8G-Ywh"/>
-                        <outlet property="userEmailName" destination="7LE-To-eZQ" id="fb0-b4-4JX"/>
+                        <outlet property="userEmail" destination="AnP-9M-Uco" id="NJk-22-bTX"/>
+                        <outlet property="userEmailName" destination="YZP-jJ-wYv" id="ZGC-JB-BYF"/>
                         <outlet property="userNickname" destination="dfI-7p-GWe" id="gat-Zm-blF"/>
                         <outlet property="userPhoneNum" destination="yRN-wr-44R" id="Lae-Nq-GbF"/>
                         <outlet property="userPhoneNumName" destination="MbC-RV-2m8" id="yp2-8n-Giu"/>

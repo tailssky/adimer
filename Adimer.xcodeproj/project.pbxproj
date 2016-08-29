@@ -190,6 +190,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10DFAE31D73B5C30053A6E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F17F9B751CF47A98004DDDA5 /* Main.storyboard */,
+				F17F9B7A1CF47A98004DDDA5 /* LaunchScreen.storyboard */,
+				F18E4A4F1CFC3A1C00EAD36B /* PublishContent.swift */,
+				F17F9B851CF48795004DDDA5 /* PublishContentCell.xib */,
+				F17F9B871CF48BA6004DDDA5 /* PublishContentCell.swift */,
+				F1B409DA1D4B86420025955C /* UserInfoCell.xib */,
+				F1B409DC1D4B981D0025955C /* UserInfoCellTableViewCell.swift */,
+				F17F9B891CF493EC004DDDA5 /* NothingFoundCell.xib */,
+				F1893C1C1D6DDA7E000023DF /* LoadingCell.xib */,
+				F1753BA61D6E0AEC00275EDD /* PublishPinDetailView.xib */,
+				F11AEFB01D5B30FB00412FA2 /* PublishPinDetailView.swift */,
+				F1E0770D1D5DE26F00549F02 /* NotificationTableViewCell.swift */,
+				F1A6F5251D3E6FCA0066D177 /* UserInfoTableViewCell.swift */,
+				F11AEFAC1D5B2C2300412FA2 /* PublishPin.swift */,
+			);
+			name = View;
+			path = Adam;
+			sourceTree = "<group>";
+		};
 		F158991F1D62A8A100CDF4C8 /* PopMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +230,7 @@
 			children = (
 				F1CBA61E1D65425E00D50403 /* LocationWenXiu.gpx */,
 				F17F9B6E1CF47A98004DDDA5 /* Adam */,
+				F10DFAE31D73B5C30053A6E7 /* View */,
 				F1C814D01D33C66300EEB0DE /* Controller */,
 				F182F7181D2A887E0068D47E /* Data Model */,
 				F182F7121D2A86E80068D47E /* Framework */,
@@ -226,33 +249,16 @@
 		F17F9B6E1CF47A98004DDDA5 /* Adam */ = {
 			isa = PBXGroup;
 			children = (
-				F195E79C1D6AD0BB000F2ECB /* NinaSelectionView */,
 				F195E79A1D69AFEF000F2ECB /* tools */,
 				F1E9938E1D67554B00DF884A /* Useless */,
-				F158991F1D62A8A100CDF4C8 /* PopMenu */,
-				F190DABB1D616FCB004EB70A /* WZLBadge */,
 				F17F9B6F1CF47A98004DDDA5 /* AppDelegate.swift */,
-				F17F9B751CF47A98004DDDA5 /* Main.storyboard */,
 				F17F9B781CF47A98004DDDA5 /* Assets.xcassets */,
-				F17F9B7A1CF47A98004DDDA5 /* LaunchScreen.storyboard */,
 				F17F9B7D1CF47A98004DDDA5 /* Info.plist */,
 				F18E4A4E1CFC3A1C00EAD36B /* PublishContent+CoreDataProperties.swift */,
-				F18E4A4F1CFC3A1C00EAD36B /* PublishContent.swift */,
-				F17F9B851CF48795004DDDA5 /* PublishContentCell.xib */,
-				F17F9B871CF48BA6004DDDA5 /* PublishContentCell.swift */,
-				F1B409DA1D4B86420025955C /* UserInfoCell.xib */,
-				F1B409DC1D4B981D0025955C /* UserInfoCellTableViewCell.swift */,
-				F17F9B891CF493EC004DDDA5 /* NothingFoundCell.xib */,
-				F1893C1C1D6DDA7E000023DF /* LoadingCell.xib */,
-				F1753BA61D6E0AEC00275EDD /* PublishPinDetailView.xib */,
-				F11AEFB01D5B30FB00412FA2 /* PublishPinDetailView.swift */,
-				F1E0770D1D5DE26F00549F02 /* NotificationTableViewCell.swift */,
-				F1A6F5251D3E6FCA0066D177 /* UserInfoTableViewCell.swift */,
 				F18E4A4B1CFC38C600EAD36B /* DataModel.xcdatamodeld */,
 				F14D03551D04693000EED5AD /* HudView.swift */,
 				F1082B401D60071C002D60C7 /* SpinnerView.swift */,
 				F14D03571D046C2800EED5AD /* Functions.swift */,
-				F11AEFAC1D5B2C2300412FA2 /* PublishPin.swift */,
 				F1753B9F1D6DFAFF00275EDD /* Localizable.strings */,
 				F1753BAD1D6E17BA00275EDD /* InfoPlist.strings */,
 				F190DAB71D616EC5004EB70A /* Adam-Bridging-Header.h */,
@@ -352,6 +358,9 @@
 		F195E79A1D69AFEF000F2ECB /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				F190DABB1D616FCB004EB70A /* WZLBadge */,
+				F195E79C1D6AD0BB000F2ECB /* NinaSelectionView */,
+				F158991F1D62A8A100CDF4C8 /* PopMenu */,
 				F158992B1D64D6F700CDF4C8 /* WGS84TOGCJ02.h */,
 				F158992D1D64D75500CDF4C8 /* WGS84TOGCJ02.m */,
 				F195E7971D69AB37000F2ECB /* UIImage+UIImageExtras.h */,

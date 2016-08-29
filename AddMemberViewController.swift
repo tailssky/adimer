@@ -117,7 +117,9 @@ extension AddMemberViewController: UISearchBarDelegate {
             queryEmail.whereKey("email", equalTo: searchtext)
             let queryNickname = AVQuery(className: "_User")
             queryNickname.whereKey("nickName", containsString: searchtext)
-            let query = AVQuery.orQueryWithSubqueries([queryPhoneNum,queryEmail,queryNickname])
+            let queryUsername = AVQuery(className: "_User")
+            queryUsername.whereKey("username", containsString: searchtext)
+            let query = AVQuery.orQueryWithSubqueries([queryPhoneNum,queryEmail,queryNickname,queryUsername])
             query.findObjectsInBackgroundWithBlock({avObjects, error in
                 if error == nil {
                     for avObject in avObjects {
