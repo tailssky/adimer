@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var userIsLogOut: Bool!
     
+    var numOfgetdata = 5
+    
 // var tabbarcontroller: UITabBarController {
 //        return window!.rootViewController as! tabBarViewController}
     
@@ -196,17 +198,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let avCurrentUser = avCurrentUser {
             //get userInfo
             userInfo = User.init(avuser: avCurrentUser)
-                        let userData = UserData.getDataFromServe(avCurrentUser)
-            
+            let userData = UserData.getDataFromServe(avCurrentUser)
+            self.userInfo?.userData = userData
             
                         
             
-            guard userData != nil else {
-                            getUserInfo()
-                            return
+            guard self.userInfo?.userData != nil else {
+            numOfgetdata -= 1
+            afterDelay(0.5,closure: {})
+                if numOfgetdata == 0 {
+                  numOfgetdata == 5
+                    
+                    let alterMessage = NSLocalizedString("Couldn't get data,please check your network.", comment: "alert")
+                    let alert = creatNormalAlert(alterMessage)
+                    let  tabbarcontroller = window?.rootViewController as! tabBarViewController
+                    if let viewControllers = tabbarcontroller.viewControllers {
+                        let navigationViewController = viewControllers[0] as! UINavigationController
+                        let mainViewController = navigationViewController.viewControllers[0] as! MainTableViewController
+                        mainViewController.presentViewController(alert, animated: true, completion: nil)}
+                    return
+                }
+            getUserInfo()
+            return
             }
             
-            self.userInfo?.userData = userData
+            
             self.getAndInjectUserData()
 
         }
@@ -221,7 +237,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         let  tabbarcontroller = window?.rootViewController as! tabBarViewController
             //inject userInfo
-            
+        if userInfo != nil && userInfo?.userData != nil {
             if let viewControllers = tabbarcontroller.viewControllers {
                 var navigationViewController = viewControllers[0] as! UINavigationController
                 let mainViewController = navigationViewController.viewControllers[0] as! MainTableViewController
@@ -242,6 +258,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 userInfoViewController.userIsLogOut = userIsLogOut
                 userInfoViewController.tableView.reloadData()
         }
+    }
     }
     
 //    func getAndInjectNotification () {
@@ -336,7 +353,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func getPublishInMultipleThreads () {
         var publishs = [Publish]()
-        let avPbulishs = dealWithPublishs(userInfo!)
+        if let userInfo = userInfo {
+        let avPbulishs = dealWithPublishs(userInfo)
         let group = dispatch_group_create()
         let q_concurrent = dispatch_queue_create("my_concurrent_queue1", DISPATCH_QUEUE_CONCURRENT)
 //        let q_concurrent = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
@@ -390,6 +408,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                    publishs.append(publish)
 //                print("-publish Get----")}})
 //        }
+        }
         
     }
     
