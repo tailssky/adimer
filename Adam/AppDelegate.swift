@@ -112,6 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let mainViewController = navigationViewController.viewControllers[0] as! MainTableViewController
                     mainViewController.showNavSpinner()
                     getPublishInMultipleThreads()
+                    getAndInjectNotification()
                     
                 }
         }
@@ -416,7 +417,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func getAndInjectPublishs() {
         var publishs = [Publish]()
-        let avPbulishs = dealWithPublishs(userInfo!)
+        if let userInfo = userInfo {
+        let avPbulishs = dealWithPublishs(userInfo)
         for avPublish in avPbulishs {
             let publish = Publish.avPublishToPublishInBackGround(avPublish)
             if let publish = publish {
@@ -431,7 +433,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let mapViewController = navigationViewController.viewControllers[0] as! MapViewController
             mapViewController.currentUser = userInfo
             mapViewController.publishs = publishs
-            mapViewController.joinedClub = userInfo!.userData.clubsCreated + userInfo!.userData.clubsJoined
+            mapViewController.joinedClub = userInfo.userData.clubsCreated + userInfo.userData.clubsJoined
+        }
         }
 
     }
