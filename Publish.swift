@@ -85,7 +85,7 @@ class Publish: NSObject {
             publish.dishName = avPublish["dishName"] as! String
             
             let avFile = avPublish["defaultDishPhoto"] as! AVFile
-            let avUrl = avFile.getThumbnailURLWithScaleToFit(true, width: 80, height: 60)
+            let avUrl = avFile.getThumbnailURLWithScaleToFit(true, width: 240, height: 180)
             let url = NSURL(string: avUrl)
             let nsData = NSData(contentsOfURL: url!)
             publish.dishPhoto = UIImage(data: nsData!)!
@@ -137,7 +137,7 @@ class Publish: NSObject {
             publish.dishName = avPublish["dishName"] as! String
             
             let avFile = avPublish["defaultDishPhoto"] as! AVFile
-            let avUrl = avFile.getThumbnailURLWithScaleToFit(true, width: 240, height: 180)
+            let avUrl = avFile.getThumbnailURLWithScaleToFit(true, width: 400, height: 300)
             let url = NSURL(string: avUrl)
             let nsData = NSData(contentsOfURL: url!)
             publish.dishPhoto = UIImage(data: nsData!)!
@@ -190,7 +190,7 @@ class Publish: NSObject {
         
         avPublish.setObject(dishName, forKey: "dishName")
         
-        var image1 = dishPhoto
+        let image1 = dishPhoto
         
         let image = image1.imageByScalingToSize(CGSize(width: 800, height: 600))
         let imageNSdata = UIImagePNGRepresentation(image)

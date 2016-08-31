@@ -218,7 +218,7 @@ extension CreateNewClubTableViewController: UIImagePickerControllerDelegate {
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        newClubImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        newClubImage.image = info[UIImagePickerControllerEditedImage] as? UIImage
         newClubImage.contentMode = UIViewContentMode.ScaleAspectFill
         newClubImage.clipsToBounds = true
         

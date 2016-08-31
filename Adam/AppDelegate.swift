@@ -355,12 +355,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func getPublishInMultipleThreads () {
         var publishs = [Publish]()
         if let userInfo = userInfo {
-        let avPbulishs = dealWithPublishs(userInfo)
+        let avPublishes = dealWithPublishs(userInfo)
         let group = dispatch_group_create()
         let q_concurrent = dispatch_queue_create("my_concurrent_queue1", DISPATCH_QUEUE_CONCURRENT)
 //        let q_concurrent = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
         
-            for avPublish in avPbulishs {
+            for avPublish in avPublishes {
             dispatch_group_async(group, q_concurrent) {
             let publish = Publish.avPublishToPublishWithOutClub(avPublish)
                            if let publish = publish {

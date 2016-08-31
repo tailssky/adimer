@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F1082B411D60071C002D60C7 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1082B401D60071C002D60C7 /* SpinnerView.swift */; };
+		F10DFAFA1D765D8F0053A6E7 /* GKCropBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DFAE61D765D8F0053A6E7 /* GKCropBorderView.m */; };
+		F10DFAFB1D765D8F0053A6E7 /* GKImageCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DFAE81D765D8F0053A6E7 /* GKImageCropOverlayView.m */; };
+		F10DFAFC1D765D8F0053A6E7 /* GKImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DFAEA1D765D8F0053A6E7 /* GKImageCropView.m */; };
+		F10DFAFD1D765D8F0053A6E7 /* GKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DFAEC1D765D8F0053A6E7 /* GKImageCropViewController.m */; };
+		F10DFAFE1D765D8F0053A6E7 /* GKImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DFAEE1D765D8F0053A6E7 /* GKImagePicker.m */; };
+		F10DFAFF1D765D8F0053A6E7 /* GKResizeableCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F10DFAF01D765D8F0053A6E7 /* GKResizeableCropOverlayView.m */; };
+		F10DFB001D765D8F0053A6E7 /* PLCameraSheetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF21D765D8F0053A6E7 /* PLCameraSheetButton.png */; };
+		F10DFB011D765D8F0053A6E7 /* PLCameraSheetButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF31D765D8F0053A6E7 /* PLCameraSheetButton@2x.png */; };
+		F10DFB021D765D8F0053A6E7 /* PLCameraSheetButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF41D765D8F0053A6E7 /* PLCameraSheetButtonPressed.png */; };
+		F10DFB031D765D8F0053A6E7 /* PLCameraSheetButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF51D765D8F0053A6E7 /* PLCameraSheetButtonPressed@2x.png */; };
+		F10DFB041D765D8F0053A6E7 /* PLCameraSheetDoneButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF61D765D8F0053A6E7 /* PLCameraSheetDoneButton.png */; };
+		F10DFB051D765D8F0053A6E7 /* PLCameraSheetDoneButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF71D765D8F0053A6E7 /* PLCameraSheetDoneButton@2x.png */; };
+		F10DFB061D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF81D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed.png */; };
+		F10DFB071D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F10DFAF91D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed@2x.png */; };
 		F11AEFAB1D58BAF200412FA2 /* ClubListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AEFAA1D58BAF200412FA2 /* ClubListTableViewController.swift */; };
 		F11AEFAD1D5B2C2300412FA2 /* PublishPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AEFAC1D5B2C2300412FA2 /* PublishPin.swift */; };
 		F11AEFB11D5B30FB00412FA2 /* PublishPinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11AEFB01D5B30FB00412FA2 /* PublishPinDetailView.swift */; };
@@ -65,6 +79,7 @@
 		F1C854581D48FE98001E8538 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C854571D48FE98001E8538 /* Notification.swift */; };
 		F1CBA61F1D65425E00D50403 /* LocationWenXiu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = F1CBA61E1D65425E00D50403 /* LocationWenXiu.gpx */; };
 		F1CBA6211D654A9000D50403 /* PublishPinDetailView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CBA6201D654A9000D50403 /* PublishPinDetailView2.xib */; };
+		F1CC84871D76B70E00E89FA2 /* UserPublishsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CC84861D76B70E00E89FA2 /* UserPublishsTableViewController.swift */; };
 		F1E0770C1D5DBF3F00549F02 /* DealNoticifationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0770B1D5DBF3F00549F02 /* DealNoticifationTableViewController.swift */; };
 		F1E0770E1D5DE26F00549F02 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0770D1D5DE26F00549F02 /* NotificationTableViewCell.swift */; };
 		F1E38A071D3678F700693699 /* EditUserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E38A061D3678F700693699 /* EditUserInfoTableViewController.swift */; };
@@ -91,6 +106,26 @@
 
 /* Begin PBXFileReference section */
 		F1082B401D60071C002D60C7 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		F10DFAE51D765D8F0053A6E7 /* GKCropBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCropBorderView.h; sourceTree = "<group>"; };
+		F10DFAE61D765D8F0053A6E7 /* GKCropBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCropBorderView.m; sourceTree = "<group>"; };
+		F10DFAE71D765D8F0053A6E7 /* GKImageCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropOverlayView.h; sourceTree = "<group>"; };
+		F10DFAE81D765D8F0053A6E7 /* GKImageCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropOverlayView.m; sourceTree = "<group>"; };
+		F10DFAE91D765D8F0053A6E7 /* GKImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropView.h; sourceTree = "<group>"; };
+		F10DFAEA1D765D8F0053A6E7 /* GKImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropView.m; sourceTree = "<group>"; };
+		F10DFAEB1D765D8F0053A6E7 /* GKImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropViewController.h; sourceTree = "<group>"; };
+		F10DFAEC1D765D8F0053A6E7 /* GKImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropViewController.m; sourceTree = "<group>"; };
+		F10DFAED1D765D8F0053A6E7 /* GKImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImagePicker.h; sourceTree = "<group>"; };
+		F10DFAEE1D765D8F0053A6E7 /* GKImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImagePicker.m; sourceTree = "<group>"; };
+		F10DFAEF1D765D8F0053A6E7 /* GKResizeableCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKResizeableCropOverlayView.h; sourceTree = "<group>"; };
+		F10DFAF01D765D8F0053A6E7 /* GKResizeableCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKResizeableCropOverlayView.m; sourceTree = "<group>"; };
+		F10DFAF21D765D8F0053A6E7 /* PLCameraSheetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetButton.png; sourceTree = "<group>"; };
+		F10DFAF31D765D8F0053A6E7 /* PLCameraSheetButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetButton@2x.png"; sourceTree = "<group>"; };
+		F10DFAF41D765D8F0053A6E7 /* PLCameraSheetButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetButtonPressed.png; sourceTree = "<group>"; };
+		F10DFAF51D765D8F0053A6E7 /* PLCameraSheetButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetButtonPressed@2x.png"; sourceTree = "<group>"; };
+		F10DFAF61D765D8F0053A6E7 /* PLCameraSheetDoneButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetDoneButton.png; sourceTree = "<group>"; };
+		F10DFAF71D765D8F0053A6E7 /* PLCameraSheetDoneButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetDoneButton@2x.png"; sourceTree = "<group>"; };
+		F10DFAF81D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLCameraSheetDoneButtonPressed.png; sourceTree = "<group>"; };
+		F10DFAF91D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PLCameraSheetDoneButtonPressed@2x.png"; sourceTree = "<group>"; };
 		F11AEFAA1D58BAF200412FA2 /* ClubListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubListTableViewController.swift; sourceTree = "<group>"; };
 		F11AEFAC1D5B2C2300412FA2 /* PublishPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishPin.swift; sourceTree = "<group>"; };
 		F11AEFB01D5B30FB00412FA2 /* PublishPinDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishPinDetailView.swift; sourceTree = "<group>"; };
@@ -167,6 +202,7 @@
 		F1C854571D48FE98001E8538 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		F1CBA61E1D65425E00D50403 /* LocationWenXiu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LocationWenXiu.gpx; sourceTree = "<group>"; };
 		F1CBA6201D654A9000D50403 /* PublishPinDetailView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublishPinDetailView2.xib; sourceTree = "<group>"; };
+		F1CC84861D76B70E00E89FA2 /* UserPublishsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPublishsTableViewController.swift; sourceTree = "<group>"; };
 		F1E0770B1D5DBF3F00549F02 /* DealNoticifationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealNoticifationTableViewController.swift; sourceTree = "<group>"; };
 		F1E0770D1D5DE26F00549F02 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		F1E342FF1D6E6C7F0047D102 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -210,6 +246,40 @@
 			);
 			name = View;
 			path = Adam;
+			sourceTree = "<group>";
+		};
+		F10DFAE41D765D8F0053A6E7 /* GKClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F10DFAE51D765D8F0053A6E7 /* GKCropBorderView.h */,
+				F10DFAE61D765D8F0053A6E7 /* GKCropBorderView.m */,
+				F10DFAE71D765D8F0053A6E7 /* GKImageCropOverlayView.h */,
+				F10DFAE81D765D8F0053A6E7 /* GKImageCropOverlayView.m */,
+				F10DFAE91D765D8F0053A6E7 /* GKImageCropView.h */,
+				F10DFAEA1D765D8F0053A6E7 /* GKImageCropView.m */,
+				F10DFAEB1D765D8F0053A6E7 /* GKImageCropViewController.h */,
+				F10DFAEC1D765D8F0053A6E7 /* GKImageCropViewController.m */,
+				F10DFAED1D765D8F0053A6E7 /* GKImagePicker.h */,
+				F10DFAEE1D765D8F0053A6E7 /* GKImagePicker.m */,
+				F10DFAEF1D765D8F0053A6E7 /* GKResizeableCropOverlayView.h */,
+				F10DFAF01D765D8F0053A6E7 /* GKResizeableCropOverlayView.m */,
+			);
+			path = GKClasses;
+			sourceTree = "<group>";
+		};
+		F10DFAF11D765D8F0053A6E7 /* GKImages */ = {
+			isa = PBXGroup;
+			children = (
+				F10DFAF21D765D8F0053A6E7 /* PLCameraSheetButton.png */,
+				F10DFAF31D765D8F0053A6E7 /* PLCameraSheetButton@2x.png */,
+				F10DFAF41D765D8F0053A6E7 /* PLCameraSheetButtonPressed.png */,
+				F10DFAF51D765D8F0053A6E7 /* PLCameraSheetButtonPressed@2x.png */,
+				F10DFAF61D765D8F0053A6E7 /* PLCameraSheetDoneButton.png */,
+				F10DFAF71D765D8F0053A6E7 /* PLCameraSheetDoneButton@2x.png */,
+				F10DFAF81D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed.png */,
+				F10DFAF91D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed@2x.png */,
+			);
+			path = GKImages;
 			sourceTree = "<group>";
 		};
 		F158991F1D62A8A100CDF4C8 /* PopMenu */ = {
@@ -361,6 +431,8 @@
 				F190DABB1D616FCB004EB70A /* WZLBadge */,
 				F195E79C1D6AD0BB000F2ECB /* NinaSelectionView */,
 				F158991F1D62A8A100CDF4C8 /* PopMenu */,
+				F10DFAE41D765D8F0053A6E7 /* GKClasses */,
+				F10DFAF11D765D8F0053A6E7 /* GKImages */,
 				F158992B1D64D6F700CDF4C8 /* WGS84TOGCJ02.h */,
 				F158992D1D64D75500CDF4C8 /* WGS84TOGCJ02.m */,
 				F195E7971D69AB37000F2ECB /* UIImage+UIImageExtras.h */,
@@ -425,6 +497,7 @@
 				F11AEFAA1D58BAF200412FA2 /* ClubListTableViewController.swift */,
 				F11AEFB21D5C246100412FA2 /* CreateNewClubTableViewController.swift */,
 				F1E0770B1D5DBF3F00549F02 /* DealNoticifationTableViewController.swift */,
+				F1CC84861D76B70E00E89FA2 /* UserPublishsTableViewController.swift */,
 			);
 			name = UserGroup;
 			sourceTree = "<group>";
@@ -495,11 +568,19 @@
 				F1753BAB1D6E17BA00275EDD /* InfoPlist.strings in Resources */,
 				F1CBA6211D654A9000D50403 /* PublishPinDetailView2.xib in Resources */,
 				F1753BA11D6DFAFF00275EDD /* Localizable.strings in Resources */,
+				F10DFB041D765D8F0053A6E7 /* PLCameraSheetDoneButton.png in Resources */,
+				F10DFB061D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed.png in Resources */,
 				F17F9B8A1CF493EC004DDDA5 /* NothingFoundCell.xib in Resources */,
+				F10DFB011D765D8F0053A6E7 /* PLCameraSheetButton@2x.png in Resources */,
+				F10DFB071D765D8F0053A6E7 /* PLCameraSheetDoneButtonPressed@2x.png in Resources */,
 				F17F9B7C1CF47A98004DDDA5 /* LaunchScreen.storyboard in Resources */,
 				F1B409DB1D4B86420025955C /* UserInfoCell.xib in Resources */,
 				F17F9B861CF48795004DDDA5 /* PublishContentCell.xib in Resources */,
 				F1753BA41D6E0AEC00275EDD /* PublishPinDetailView.xib in Resources */,
+				F10DFB031D765D8F0053A6E7 /* PLCameraSheetButtonPressed@2x.png in Resources */,
+				F10DFB001D765D8F0053A6E7 /* PLCameraSheetButton.png in Resources */,
+				F10DFB051D765D8F0053A6E7 /* PLCameraSheetDoneButton@2x.png in Resources */,
+				F10DFB021D765D8F0053A6E7 /* PLCameraSheetButtonPressed.png in Resources */,
 				F17F9B791CF47A98004DDDA5 /* Assets.xcassets in Resources */,
 				F1CBA61F1D65425E00D50403 /* LocationWenXiu.gpx in Resources */,
 				F17F9B771CF47A98004DDDA5 /* Main.storyboard in Resources */,
@@ -541,22 +622,28 @@
 				F1B409DD1D4B981D0025955C /* UserInfoCellTableViewCell.swift in Sources */,
 				F16FA3A01D3FCF5F0097295A /* tabBarViewController.swift in Sources */,
 				F1082B411D60071C002D60C7 /* SpinnerView.swift in Sources */,
+				F1CC84871D76B70E00E89FA2 /* UserPublishsTableViewController.swift in Sources */,
 				F190DACC1D616FCB004EB70A /* CAAnimation+WAnimation.m in Sources */,
 				F16688E11D6601D000FAEC8B /* MainTableViewController.swift in Sources */,
 				F16FB53A1D687B48000505F9 /* AddViewController.swift in Sources */,
+				F10DFAFC1D765D8F0053A6E7 /* GKImageCropView.m in Sources */,
 				F15899261D62A8CF00CDF4C8 /* MenuModel.m in Sources */,
 				F1E0770C1D5DBF3F00549F02 /* DealNoticifationTableViewController.swift in Sources */,
 				F18E4A4D1CFC38C600EAD36B /* DataModel.xcdatamodeld in Sources */,
+				F10DFAFF1D765D8F0053A6E7 /* GKResizeableCropOverlayView.m in Sources */,
 				F1E38A071D3678F700693699 /* EditUserInfoTableViewController.swift in Sources */,
 				F17F9B701CF47A98004DDDA5 /* AppDelegate.swift in Sources */,
 				F1C814CD1D33C5F200EEB0DE /* Club.swift in Sources */,
 				F1E9938D1D67553600DF884A /* ShowDetailViewController.swift in Sources */,
 				F1FD28751D42418000FF0B38 /* UserCreatClubCollectionViewController.swift in Sources */,
+				F10DFAFA1D765D8F0053A6E7 /* GKCropBorderView.m in Sources */,
 				F190DAD21D616FD7004EB70A /* UIView+Frame.m in Sources */,
 				F1624C461D6C2ED30027AC8E /* DetailMapViewController.swift in Sources */,
 				F12CE88E1D350B2B00745943 /* SignUpViewController.swift in Sources */,
 				F11AEFB31D5C246100412FA2 /* CreateNewClubTableViewController.swift in Sources */,
 				F18E4A511CFC3A1C00EAD36B /* PublishContent.swift in Sources */,
+				F10DFAFD1D765D8F0053A6E7 /* GKImageCropViewController.m in Sources */,
+				F10DFAFB1D765D8F0053A6E7 /* GKImageCropOverlayView.m in Sources */,
 				F19A7E351D43B19300799F93 /* UserData.swift in Sources */,
 				F14D03581D046C2800EED5AD /* Functions.swift in Sources */,
 				F1E0770E1D5DE26F00549F02 /* NotificationTableViewCell.swift in Sources */,
@@ -565,6 +652,7 @@
 				F190DACD1D616FCB004EB70A /* UIView+WZLBadge.m in Sources */,
 				F14D03561D04693000EED5AD /* HudView.swift in Sources */,
 				F1C814D21D33CB8100EEB0DE /* SignInViewController.swift in Sources */,
+				F10DFAFE1D765D8F0053A6E7 /* GKImagePicker.m in Sources */,
 				F17F9B881CF48BA6004DDDA5 /* PublishContentCell.swift in Sources */,
 				F1C854581D48FE98001E8538 /* Notification.swift in Sources */,
 				F12CE8901D35314B00745943 /* UserInfoTableViewController.swift in Sources */,

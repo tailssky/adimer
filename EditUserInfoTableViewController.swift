@@ -174,6 +174,9 @@ class EditUserInfoTableViewController: UITableViewController {
             let navcontroller = segue.destinationViewController as!UINavigationController
             let controller = navcontroller.viewControllers[0] as! ChangePasswordTableViewController
             controller.newUser = newUser
+        } else if segue.identifier == "showMyPublishes" {
+            let controller = segue.destinationViewController as! UserPublishsTableViewController
+            controller.userInfo = newUser
         }
     }
 

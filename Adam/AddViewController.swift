@@ -59,6 +59,8 @@ class AddViewController: UITableViewController {
     
     var isAD = false
     
+//    var imagePicker = GKImagePicker()
+    
     var textViewplaceholder = NSLocalizedString("Your review here.", comment: "")
     
     @IBAction func isADswitchChange () {
@@ -460,6 +462,12 @@ extension AddViewController: UIImagePickerControllerDelegate {
     }
     
     func choosePhotoFromLibrary() {
+//        let imagePicker = GKImagePicker()
+//        imagePicker.cropSize = CGSizeMake(800, 600)
+//        imagePicker.delegate = self
+//        imagePicker.resizeableCropArea = true
+//        imagePicker.imagePickerController.sourceType = .PhotoLibrary
+//        presentViewController(imagePicker.imagePickerController, animated: true, completion: nil)
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .PhotoLibrary
         imagePicker.delegate = self
@@ -468,11 +476,11 @@ extension AddViewController: UIImagePickerControllerDelegate {
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        newPublishPhoto.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        newPublishPhoto.image = info[UIImagePickerControllerEditedImage] as? UIImage
         newPublishPhoto.contentMode = UIViewContentMode.ScaleAspectFill
         newPublishPhoto.clipsToBounds = true
         
-        publish.dishPhoto = (info[UIImagePickerControllerOriginalImage] as? UIImage)!
+        publish.dishPhoto = (info[UIImagePickerControllerEditedImage] as? UIImage)!
         
         dismissViewControllerAnimated(true, completion: nil)
     }
@@ -558,5 +566,22 @@ extension AddViewController: UITextViewDelegate {
             textView.textColor = UIColor.lightGrayColor()
         }
         textView.resignFirstResponder()
+    }
+}
+
+extension AddViewController: GKImagePickerDelegate {
+    
+    func imagePicker(imagePicker: GKImagePicker!, pickedImage image: UIImage!) {
+        publish.dishPhoto = image
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        newPublishPhoto.image = image
+        newPublishPhoto.contentMode = UIViewContentMode.ScaleAspectFill
+        newPublishPhoto.clipsToBounds = true
+        
+        publish.dishPhoto = image
+        
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

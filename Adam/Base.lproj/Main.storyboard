@@ -380,6 +380,37 @@
             </objects>
             <point key="canvasLocation" x="3456" y="-457"/>
         </scene>
+        <!--User Publishs Table View Controller-->
+        <scene sceneID="45e-PA-yq7">
+            <objects>
+                <tableViewController id="ske-Ly-gQB" customClass="UserPublishsTableViewController" customModule="Adimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="32f-iU-Gea">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rCB-aM-Grg">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rCB-aM-Grg" id="Ktm-XM-7jG">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ske-Ly-gQB" id="yJv-jU-B2p"/>
+                            <outlet property="delegate" destination="ske-Ly-gQB" id="SJj-bq-deF"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="vAN-Jx-ZDd" kind="show" identifier="showPublishDetail" id="UJq-Kc-r2T"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wub-Rg-G1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4145" y="-477"/>
+        </scene>
         <!--Show-->
         <scene sceneID="ATL-UZ-gVP">
             <objects>
@@ -1027,6 +1058,14 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="CxH-pf-k1U" firstAttribute="centerY" secondItem="ubp-oT-mdo" secondAttribute="centerY" id="gMI-RN-Hcb"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="gMI-RN-Hcb"/>
+                                                        </mask>
+                                                    </variation>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUD-mn-zct">
                                                     <rect key="frame" x="226" y="74" width="30" height="30"/>
@@ -2055,6 +2094,10 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="dfQ-5d-Hpw" firstAttribute="centerY" secondItem="eek-UD-c0m" secondAttribute="centerY" id="nRz-Yx-yzR"/>
+                                                        <constraint firstItem="ADQ-qK-ooW" firstAttribute="centerY" secondItem="eek-UD-c0m" secondAttribute="centerY" id="trk-86-Q6w"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -2213,7 +2256,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="l9b-Ro-S5a">
-                            <rect key="frame" x="0.0" y="519" width="600" height="44"/>
+                            <rect key="frame" x="0.0" y="563" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnO-i1-zJP">
@@ -2381,6 +2424,29 @@
                                                 <constraint firstItem="tx0-FV-pzf" firstAttribute="leading" secondItem="aHN-NW-dvi" secondAttribute="leadingMargin" constant="8" id="spj-yI-BC6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="uGE-Gl-BRv">
+                                        <rect key="frame" x="0.0" y="501" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uGE-Gl-BRv" id="fnk-bG-muc">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Publishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVz-rn-SEb">
+                                                    <rect key="frame" x="7" y="11" width="102" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lVz-rn-SEb" firstAttribute="centerY" secondItem="fnk-bG-muc" secondAttribute="centerY" id="YQl-a8-31c"/>
+                                                <constraint firstItem="lVz-rn-SEb" firstAttribute="leading" secondItem="fnk-bG-muc" secondAttribute="leadingMargin" constant="8" id="rSp-tb-yEi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ske-Ly-gQB" kind="show" identifier="showMyPublishes" id="VrI-tD-rkE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -2685,5 +2751,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="4Vc-AJ-ocq"/>
         <segue reference="VXV-qb-duj"/>
+        <segue reference="UJq-Kc-r2T"/>
     </inferredMetricsTieBreakers>
 </document>

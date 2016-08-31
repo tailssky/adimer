@@ -8,3 +8,4 @@
 #import "UIImage+UIImageExtras.h"
 #import "UIParameter.h"
 #import "NinaSelectionView.h"
+#import "GKImagePicker.h"

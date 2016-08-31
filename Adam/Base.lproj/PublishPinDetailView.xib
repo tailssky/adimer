@@ -14,10 +14,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="293" height="179"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="est-f2-Fbx">
-                            <rect key="frame" x="23" y="0.0" width="248" height="17"/>
+                            <rect key="frame" x="38" y="0.0" width="218" height="17"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-L4-t99">
-                                    <rect key="frame" x="0.0" y="0.0" width="130" height="17"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sda-kU-Hfj">
                                             <rect key="frame" x="0.0" y="0.0" width="33" height="16"/>
@@ -26,16 +26,16 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8ZA-Z0-qmy">
-                                            <rect key="frame" x="38" y="0.0" width="92" height="17"/>
+                                            <rect key="frame" x="38" y="0.0" width="62" height="17"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dish20*20" translatesAutoresizingMaskIntoConstraints="NO" id="ltw-uv-FiX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="17"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dish20*20" translatesAutoresizingMaskIntoConstraints="NO" id="G5i-Q1-6Z4">
-                                                    <rect key="frame" x="31" y="0.0" width="30" height="17"/>
+                                                    <rect key="frame" x="21" y="0.0" width="20" height="17"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dish20*20" translatesAutoresizingMaskIntoConstraints="NO" id="Rcj-Sb-W34">
-                                                    <rect key="frame" x="62" y="0.0" width="30" height="17"/>
+                                                    <rect key="frame" x="42" y="0.0" width="20" height="17"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -45,7 +45,7 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MFh-ZF-VAI">
-                                    <rect key="frame" x="145" y="0.0" width="103" height="17"/>
+                                    <rect key="frame" x="115" y="0.0" width="103" height="17"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc5-Qx-Rry">
                                             <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
