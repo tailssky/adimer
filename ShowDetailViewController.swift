@@ -86,7 +86,13 @@ class ShowDetailViewController: UIViewController {
         }
         
         publishPhoto.image = publish.dishPhoto
-        publisherPhoto.image = publisher?.userPortraitImage
+        
+        if let publisher = publisher {
+            publisherPhoto.image = publisher.userPortraitImage
+        } else {
+            publisherPhoto.image = UIImage(named: "defaultPortraitImage")
+        }
+        
         publisherName.text = publish.publisherName
         
         if publish.reviewDishRate == 1 {

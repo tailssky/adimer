@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -920,6 +920,7 @@
                         <outlet property="addressLabel" destination="FxI-gm-rF9" id="abW-2U-olB"/>
                         <outlet property="cleannessSegmentedControl" destination="QTv-pS-KTe" id="Lbb-tk-e09"/>
                         <outlet property="dishSegmentedControl" destination="zL7-KR-AWW" id="QN7-I3-hJd"/>
+                        <outlet property="edgeGestureRecognizer" destination="OaK-cY-YNs" id="w5T-Rf-ycw"/>
                         <outlet property="getLocationButton" destination="Mhb-7z-B12" id="6NU-kX-73i"/>
                         <outlet property="isADswitch" destination="eCy-vH-wTm" id="eZc-U2-qep"/>
                         <outlet property="newPublishDishName" destination="tm6-je-ok7" id="vJR-O6-J0i"/>
@@ -931,7 +932,12 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVe-uV-ana" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="OaK-cY-YNs"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="OaK-cY-YNs">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="edgeGusetureOcurred:" destination="jYj-0a-J0d" id="wqQ-gt-D19"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2743" y="-1136"/>
         </scene>
@@ -2149,7 +2155,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZP-jJ-wYv">
                                                     <rect key="frame" x="37" y="8" width="41" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnP-9M-Uco">

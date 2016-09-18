@@ -55,6 +55,8 @@ class AddViewController: UITableViewController {
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet weak var edgeGestureRecognizer: UIScreenEdgePanGestureRecognizer!
+    
     var publishContents = [PublishContent]()
     
     var isAD = false
@@ -107,6 +109,8 @@ class AddViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.addGestureRecognizer(edgeGestureRecognizer)
         
         newPublishPhoto.tag = 102
     
@@ -194,6 +198,10 @@ class AddViewController: UITableViewController {
             controller.choosenClubs = self.choosenToPublishClub
             controller.clubsForChoose = self.currentUser.userData.clubsCreated + self.currentUser.userData.clubsJoined
         }
+    }
+    
+    @IBAction func edgeGusetureOcurred(recogizer: UIScreenEdgePanGestureRecognizer) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     //MARK: - CoreData method

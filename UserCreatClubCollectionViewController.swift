@@ -28,10 +28,15 @@ class UserCreatClubCollectionViewController: UICollectionViewController {
         
         if viewType == 1 {
             rightBarButton.title = NSLocalizedString("Exit club", comment: "离开club")
+            
 //           rightBarButton.target = nil
 //            rightBarButton.action = #selector(UserCreatClubCollectionViewController.exitClub)
         } else if viewType == 0 {
             rightBarButton.title = NSLocalizedString("Dismiss club", comment: "解散club")
+            
+            let gestureReconizer = UILongPressGestureRecognizer(target: self, action:#selector(self.changNameBtnTapped))
+            gestureReconizer.cancelsTouchesInView = false
+            self.view.addGestureRecognizer(gestureReconizer)
         }
 
         // Uncomment the following line to preserve selection between presentations
@@ -111,9 +116,40 @@ class UserCreatClubCollectionViewController: UICollectionViewController {
         }
     }
     
+    @IBAction func changNameBtnTapped() {
+        let title = NSLocalizedString("Change club name", comment: "")
+        let message = NSLocalizedString("Type your club's new name", comment: "")
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler(nil)
+        let actionOK = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .Default, handler: {_ in
+            if let newName = alert.textFields![0].text {
+                let spinnerView = SpinnerView.spinnerInView(self.navigationController!.view, animated: true)
+                spinnerView.text = NSLocalizedString("Please wait", comment: "请稍后")
+                if self.changeClubName(newName) {
+                    spinnerView.removeFromSuperview()
+                    self.navigationController!.view.userInteractionEnabled = true
+                    
+                    self.needRefresh = true
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                    self.navigationController?.popToRootViewControllerAnimated(true)
+                }
+            }})
+        alert.addAction(actionOK)
+        let actionCancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .Cancel, handler: nil)
+        alert.addAction(actionCancel)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     
     func needFreshData () {
         
+    }
+    
+    private func changeClubName(newName: String) -> Bool {
+        let avClub = AVObject(className: "Club", objectId: clubInfo.clubID)
+        avClub.setObject(newName, forKey: "name")
+        return avClub.save()
     }
     
     private func dismissClub() -> Bool {
